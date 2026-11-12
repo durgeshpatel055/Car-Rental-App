@@ -40,6 +40,7 @@ const Sidebar = () => {
                 <div className={`${link.path === location.pathname  && 'bg-primary'} w-1.5 h-8 rounded-1 right-0 absolute`}></div>
             </NavLink>
         ))}
+        
       </div>
     </div>
   )
