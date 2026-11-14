@@ -150,7 +150,8 @@ const AddCar = () => {
                     value={car.description} onChange={e=> setCar({...car, description: e.target.value})}></textarea>
                 </div>
 
-                <button className='flex items-center gap-2 px-4 py-2.5 mt-4 bg-primary text-white rounded-md font-medium
+                <button className='flex items-center gap-2 px-4 py-2.5 mt-4 bg-primary 
+                text-white rounded-md font-medium
                  w-max cursor-pointer'>
                   <img src={assets.tick_icon} alt="" />
                   List Your Car
