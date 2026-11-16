@@ -28,24 +28,34 @@ const Login = ({setShowLogin}) => {
    </div>
 )}
     <div className="w-full">
-        <label className="block">Email</label>
-        <input type="email" placeholder="type here" required
+      <p>Email</p>
+        <input onChange={((e) => setEmail(e.target.value))} value={email} 
+         type="email" placeholder="type here" required
             className="border border-gray-200 rounded w-full p-2 mt-1 outline-primary"/>
     </div>
 
     <div className="w-full">
-        <label className="block">Password</label>
-        <input type="password" placeholder="type here" required
+        <p>Password</p>
+        <input onChange={((e) => setPassword(e.target.value))} value={password} type="password" placeholder="type here" required
             className="border border-gray-200 rounded w-full p-2 mt-1 outline-primary"/>
     </div>
-
-    <p className="mt-4">
-        Create an account?
-        <a href="#" className="text-primary">Click here</a>
+    {state === "register" ? (
+    <p>
+        Already have account? <span onClick={() => setState("login")} className='text-primary cursor-pointer'>
+          ckick here
+        </span>
     </p>
+    ) : (
 
-    <button type="submit" className="bg-primary hover:bg-indigo-600 transition-all text-white w-full py-2 rounded-md mt-4 cursor-pointer">
-        Login
+   <p>
+        Create an account? <span onClick={() => setState("register")} className='text-primary cursor-pointer'>
+          ckick here
+        </span>
+    </p>
+    )}
+
+    <button type="submit" className="bg-primary hover:bg-blue-800 transition-all text-white w-full py-2 rounded-md mt-4 cursor-pointer">
+        {state === "register" ? "create Account" : "Login"}
     </button>
 </form>
     </div>
