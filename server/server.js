@@ -15,6 +15,7 @@ const app = express()
 // connect Database
 await connectDB()
 
+
 // Middleware
 app.use(cors());
 app.use(express.json());

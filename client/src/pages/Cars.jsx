@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Title  from '../components/Title'
 import { assets, dummyCarData } from '../assets/assets'
-import CarCard from '../components/CarCard'
+import CarCard from '../components/CarCard';
 const Cars = () => {
 
 
