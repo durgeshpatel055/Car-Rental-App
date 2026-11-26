@@ -38,7 +38,7 @@ export  const addCar = async (req, res)=>{
 
 
     //   optimized through imagekit URL transformation
-       var optimizedImageURL = imagekit.URL({
+       var optimizedImageURL = imagekit.url({
         path : response.filePath,
         transformation : [
             {width: '1280'},  //Width resizing
