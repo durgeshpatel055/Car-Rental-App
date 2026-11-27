@@ -63,7 +63,6 @@ export const loginUser = async (req, res)=> {
 
 // Get User data using token (JWT)
 
-
 export const getUserData = async (req, res) =>{
     try {
         const {user} = req;
