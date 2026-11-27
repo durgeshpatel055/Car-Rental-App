@@ -13,5 +13,5 @@ ownerRouter.post('/add-car', upload.single("image"), protect, addCar)
 
 
 
-export default ownerRouter
+export default ownerRouter;
 
