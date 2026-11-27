@@ -1,5 +1,5 @@
 import imagekit from "../configs/imageKit.js";
-import Car from "../models/car.js";
+import Car from "../models/Car.js";
 import User from "../models/User.js";
 import fs from 'fs';
 
